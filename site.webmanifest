@@ -1,0 +1,19 @@
+{
+    "name": "Calculadora de IMC",
+    "lang": "es",
+    "description": "Calculadora de Indice de Masa Corporal",
+    "short_name": "IMC",
+    "icons": [
+    {
+    "src": "/icons/imcIcon.png",
+    "type": "image/png",
+    "sizes": "256x256"
+    }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "orientation": "any",
+    "scope": "/"
+}

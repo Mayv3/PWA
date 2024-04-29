@@ -7,8 +7,9 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/boostrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" href="icons/imcIcon.png">
@@ -43,21 +44,42 @@
         </nav>  
     </header> 
     
-    <main class="d-flex justify-content-center align-items-center" id="index">
-        <div class="container containerMain">
-            <div class="row justify-content-center text-center">
-                <div class="col-12 text-white d-flex align-items-center flex-column">
-                    <h1 class="font-big font-small">Calcula tu Índice de Masa Corporal</h1>
-                    <p><em>El índice de masa corporal (IMC) es un número que se calcula con base en el peso y la estatura de la persona. Para la mayoría de las personas, el IMC es un indicador confiable de la gordura y se usa para identificar las categorías de peso que pueden llevar a problemas de salud.</em></p>
-                    <div class="w-100 containerBtns mt-4 d-flex justify-content-center align-items-center">
-                        <a href="calcularIMC.html" class="btn rounded-0 d-flex justify-content-center">Calcular</a>
-                        <a href="contacto.html" class="btn rounded-0 d-flex justify-content-center">Contacto</a>
+    <main class="d-flex justify-content-center align-items-center" id="calcular">
+        
+        <div class="container mt-5 calculator row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h2 class="mb-4 text-white text-center">Calculadora de Índice de Masa Corporal (IMC)</h2>
+                <form id="imcForm">
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label class="text-white" for="peso">Peso (KG):</label>
+                            <input type="number" class="form-control" id="peso" name="peso" required>
+                        </div>
+                        <div class="form-group col-6">
+                            <label class="text-white" for="altura">Altura (M):</label>
+                            <input type="number" class="form-control" id="altura" name="altura" step="0.01" required>
+                        </div>
                     </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn mx-auto mt-4">Calcular IMC</button>
+                    </div>
+                </form>
+            </div>
+        
+            <div class="col-lg-6">
+                <div class="row w-100 p-0 m-0 text-center mb-1">
+                    <div class="col-4 bg-danger">Menor a 20</div>
+                    <div class="col-4 bg-success">Entre 20 y 25</div>
+                    <div class="col-4 bg-danger">Mayor a 25</div>
                 </div>
+                  <ul class="list-group  h-100" id="listaIMCs"></ul>
             </div>
         </div>
-    </main>
+          
 
+    </main>
+        
     <footer class="text-center text-lg-start text-dark fixed-bottom">
         <div class="d-flex justify-content-center p-4 text-white">
             <div>
@@ -83,9 +105,7 @@
         </div>
     </footer>
 
+    <script src="calcularImc.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-</body>
-</html>
