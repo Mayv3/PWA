@@ -17,6 +17,7 @@ const cache_assets = [
   "img/contactoft.jpg",
   "img/imgNotFound.webp",
   "icons/imcIcon.png",
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 ];
 
 self.addEventListener("install", (event) => {

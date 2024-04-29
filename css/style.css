@@ -40,6 +40,7 @@ main{
     z-index: 10;
     margin-top: 1rem;
 }
+
 footer, nav{
     color: white;
     width: 100%;
@@ -82,7 +83,6 @@ em > p{
     align-items: center;
     text-align: center;
     margin: 0px 1rem;
-    border-radius: none;
     width: 12rem;
     height: 5.5rem;
     transition: all .2s;
@@ -112,7 +112,7 @@ em > p{
 .btn{
     background-color: var(--btn-bg-color);
     color: white;
-    border-radius: 0;
+    border-radius: .275;
 }
 .btn:hover{
     background-color: var(--main-hover);
@@ -157,7 +157,7 @@ em > p{
 }
 
 .hide-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #2e2e2e; /* Cambia el color de lo que se mueve dentro del scrollbar */
+    background-color: #545353;
 }
 .resultado{
     font-size: 1.3rem;
@@ -175,17 +175,17 @@ label{
     margin: .7rem 0rem;
 }
 input{
-    border-radius: 0 !important;
+    border-radius: 0,275 !important;
 }
 
 input:focus, textarea:focus{
     box-shadow: none !important;
 }
-
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+    border-radius: 0.375;
 }
 @media (max-width: 767px) {
     .font-small {
