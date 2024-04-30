@@ -27,6 +27,9 @@ alturaInput.addEventListener('input', ()=> {
   }else if(alturaInput.value < 0){
     alturaInput.value = 0;
   }
+  if(alturaInput.value.includes('.')){
+    alturaInput.value = 0;
+}
 })
 
 caloriasForm.addEventListener("submit", function(e) {

@@ -17,6 +17,7 @@ main{
     background-position: top 200px;
     background-repeat: no-repeat;
     background-size: cover;
+    max-height: 100vh;
     filter: brightness(100%);
 }
 #index{
@@ -136,8 +137,7 @@ em > p{
     backdrop-filter: blur(20px);
     background-color: #00000031;
     color: white;
-    max-height: 40rem;
-    min-height: 40rem;
+    height: 70vh;
     margin-bottom: 5rem;
     border-radius: 0;
     border: none;
@@ -166,12 +166,11 @@ em > p{
 .caloriasContainer{
     text-align: center;
     padding: 2rem;
-    width: 40%;
     background-color: transparent;
     backdrop-filter: blur(20px);
 }
 label{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: .7rem 0rem;
 }
 input{
@@ -195,18 +194,15 @@ input[type="number"]::-webkit-outer-spin-button {
         margin-top: 1.5rem;
     }
     #calcular{
-        height: 125vh;
+        min-height: 125vh;
     }
     #calcular > .container > div{
-        
         margin-bottom: 1rem;
         }
     #listaIMCs{
         margin-top: 2rem;
         backdrop-filter: blur(20px);
         color: white;
-        max-height: 25rem;
-        min-height: 25rem;
         margin-bottom: 5rem;
     }
     #listaIMCs li {
@@ -221,5 +217,13 @@ input[type="number"]::-webkit-outer-spin-button {
         width: 100%;
         background-color: transparent;
         backdrop-filter: blur(20px);
+    }
+}
+@media (min-width: 767px) and (max-width: 992px){
+    .caloriasContainer > div{
+        width: 60%;
+    }
+    #calcular{
+        min-height: 125vh;
     }
 }

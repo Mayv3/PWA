@@ -55,6 +55,9 @@ alturaInput.addEventListener('input', ()=>{
     if(alturaInput.value < 0){
         alturaInput.value = 0;
     }
+    if(alturaInput.value.includes('.')){
+        alturaInput.value = 0;
+    }
 })
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -92,6 +95,7 @@ function mostrarImcs(imcs) {
             "p-4",
             "bg-dark",
             "text-white",
+            "border-0"
         );
 
         let divDatos = document.createElement("div");
