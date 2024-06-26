@@ -1,19 +1,64 @@
 {
-    "name": "Calculadora de IMC",
-    "lang": "es",
-    "description": "Calculadora de Indice de Masa Corporal",
-    "short_name": "IMC",
-    "icons": [
+  "name": "Calculadora de IMC",
+  "lang": "es",
+  "description": "Calculadora de Indice de Masa Corporal",
+  "short_name": "IMC",
+  "icons": [
     {
-    "src": "/icons/imcIcon.png",
-    "type": "image/png",
-    "sizes": "256x256"
+      "src": "/icons/imcIcon-48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/icons/imcIcon-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/icons/imcIcon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/icons/imcIcon-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/icons/imcIcon-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/icons/imcIcon-152x152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/icons/imcIcon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/imcIcon-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/icons/imcIcon-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/icons/imcIcon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
-    ],
-    "start_url": "/index.html",
-    "display": "standalone",
-    "background_color": "#000000",
-    "theme_color": "#000000",
-    "orientation": "any",
-    "scope": "/"
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "any",
+  "scope": "/"
 }

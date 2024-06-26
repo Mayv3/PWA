@@ -24,57 +24,32 @@
     <link rel="icon" href="icons/imcIcon.png" />
   </head>
   <body>
-    
     <div
-      class="d-flex justify-content-center align-items-center vh-100"
-      id="calcular"
+      class="m-0 d-flex justify-content-center align-items-center imc-info"
     >
-    <a href="index.html" class="btn btn-success return-index"
-        ><img class="icon icon-arrow" src="img/arrow-back.png" alt=""></a>
-      <div class="container mt-5 calculator row justify-content-center">
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h2 class="mb-4 text-white text-center">
-            Calculadora de Índice de Masa Corporal (IMC)
-          </h2>
-          <form id="imcForm">
-            <div class="row">
-              <div class="form-group col-6">
-                <label class="text-white" for="peso">Peso (KG):</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="peso"
-                  name="peso"
-                  required
-                />
-              </div>
-              <div class="form-group col-6">
-                <label class="text-white" for="altura" maxlength="2"
-                  >Altura (CM):</label
-                >
-                <input
-                  type="number"
-                  class="form-control"
-                  id="altura"
-                  step="0.01"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="text-center">
-              <button type="submit" class="btn mt-4 p-4 w-100">
-                Calcular IMC
-              </button>
-            </div>
-          </form>
+      <div class="data-imc-info w-75">
+        
+        <div class="text-center">
+          <h1 class="text-center">TU IMC ES:</h1>
+          <p id="resultadoIMC"></p>
         </div>
-      </div>
+        
+        <div>
+          <a class="btn mt-4 p-4 w-100" href="calcularIMC.html">Volver a calcular</a>
+          <div class="d-flex gap-2 justify-content-center align-items-center mt-2">
+            <a class="btn w-100" href="index.html">Inicio</a>
+            <a class="btn w-100" href="historialIMC.html">Historial</a>
+          </div>
+        </div>
+        
+    </div>
 
-    <script src="./js/utilidades/db.js"></script>  
-    <script src="./js/calcularImc.js"></script>
     <script src="./js/main.js"></script>
-    
+      
+    <script src="./js/utilidades/db.js"></script>
+    <script src="./js/utilidades/ultimoImc.js"></script>
+    <script src="./js/utilidades/toast.js"></script>
+    <script src="./js/mostrarIMC.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

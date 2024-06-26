@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Actividad - Tipo de Actividad</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="icons/imcIcon.png" />
+  </head>
+  <body class="bg-dark text-white w-100">
+    <main>
+      <div
+        class="container vh-100 d-flex flex-column justify-content-center tipoActividad"
+      >
+        <h1 class="mt-5 text-center">Actividad Física</h1>
+        <form id="tipoActividadForm" class="mt-5">
+          <div class="form-group">
+            <label for="tipoActividad">Tipo de Actividad</label>
+            <select class="form-control" id="tipoActividad" required>
+              <option value="correr">Correr</option>
+              <option value="caminar">Caminar</option>
+              <option value="ejercicioDemandante">Ejercicio Demandante</option>
+            </select>
+          </div>
+          <button type="submit" class="btn w-100 p-4">Siguiente</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="./js/utilidades/db.js"></script>
+    <script src="./js/tipoActividad.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

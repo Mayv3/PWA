@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Actividad - Fecha</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="icons/imcIcon.png" />
+  </head>
+  <body class="bg-dark text-white w-100">
+    <div
+      class="container vh-100 d-flex flex-column justify-content-center fechaActividad"
+    >
+      <h1 class="mt-5 text-center">Fecha del registro</h1>
+      <form id="fechaActividadForm" class="mt-2">
+        <div class="form-group">
+          <label for="fechaActividad">Fecha</label>
+          <input
+            type="date"
+            class="form-control"
+            id="fechaActividad"
+            required
+          />
+        </div>
+        <button type="submit" class="btn w-100 p-4">Registrar</button>
+      </form>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/utilidades/db.js"></script>
+    <script src="./js/fechaActividad.js"></script>
+  </body>
+</html>

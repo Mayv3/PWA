@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos los Registros de Actividad</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="w-100">
+    <main>
+      <a href="index.html" class="btn btn-success return-index"
+        ><img class="icon icon-arrow" src="img/arrow-back.png" alt=""
+      /></a>
+
+      <div class="bg-dark m-0 p-0 text-white registros vh-100">
+        <div
+          class="d-flex justify-content-center align-items-center tituloregistro"
+        >
+          <h2>Registros de actividad</h2>
+          <img class="icon" src="img/registro-actividad.png" alt="" />
+        </div>
+        <a class="btn mt-3 ml-2 mb-2" href="tipoActividad.html">
+          Nueva Actividad +
+        </a>
+        <ul id="listaRegistros" class="list-group mt-2"></ul>
+      </div>
+      <div
+        class="modal fade"
+        id="editModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="editModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="editModalLabel">
+                Modificar Registro
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="editForm">
+                <div class="form-group">
+                  <label class="text-dark" for="tipoActividad"
+                    >Tipo de Actividad</label
+                  >
+                  <select class="form-control" id="tipoActividad">
+                    <option value="correr">Correr</option>
+                    <option value="caminar">Caminar</option>
+                    <option value="ejercicioDemandante">
+                      Ejercicio Demandante
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="text-dark" for="duracion"
+                    >Duración (minutos)</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="duracion"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="text-dark" for="fechaActividad">Fecha</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="fechaActividad"
+                    required
+                  />
+                </div>
+                <input type="hidden" id="registroId" />
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" id="saveChangesButton">
+                Guardar Cambios
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./js/utilidades/db.js"></script>
+    <script src="./js/utilidades/calcularCaloriasQuemadas.js"></script>
+    <script src="./js/utilidades/toast.js"></script>
+    <script src="./js/registrosActividad.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
